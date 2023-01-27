@@ -5,4 +5,4 @@ def comparison_of_halfs(number):
 
 
 ticket_number = 584945
-print(comparison_of_half(ticket_number))
+print(comparison_of_halfs(ticket_number))
