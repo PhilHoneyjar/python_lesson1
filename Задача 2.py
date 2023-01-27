@@ -2,11 +2,11 @@
 
 def sum_of_digits(number):
     sum = 0
-    for x in range(number):
+    while number > 0:
         sum += number % 10
         number //= 10
     return sum
 
 
-a = 528
+a = 528.65
 print(sum_of_digits(a))
