@@ -1,7 +1,7 @@
 # Задача 6: Вам требуется написать программу, которая проверяет счастливость билета.
 
 def check_ticket(bool):
-    return 'Это счастливый билет' if bool == True else 'Это обычный билет'
+    return 'Это счастливый билет' if bool else 'Это обычный билет'
 
 
 def comparison_of_halfs(number):
