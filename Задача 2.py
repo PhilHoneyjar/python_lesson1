@@ -5,8 +5,11 @@ def sum_of_digits(number):
     while number > 0:
         sum += number % 10
         number //= 10
-    return sum
+    return round(sum, 2)
 
 
-a = 528.65
-print(sum_of_digits(a))
+def input_number():
+    return float(input('Введите число: '))
+
+
+print('Сумма цифр числа:', sum_of_digits(input_number()))

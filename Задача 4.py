@@ -3,12 +3,15 @@
 # если известно, что Петя и Сережа сделали одинаковое количество журавликов,
 # а Катя сделала в два раза больше журавликов, чем Петя и Сережа вместе?
 
-def zhuravliki_ratio(birds):
-    Katya = birds / 2
+def zhuravliki_ratio(number):
+    Katya = number / 2
     Petya = Katya / 2
     Serezha = Petya
     return Katya, Petya, Serezha
 
 
-birds = 22
-print('Katya: {}, Petya: {}, Serezha: {}'.format(*zhuravliki_ratio(birds)))
+def input_number():
+    return int(input('Введите количество журавликов: '))
+
+
+print('Катя: {}, Петя: {}, Сережа: {}'.format(*zhuravliki_ratio(input_number())))
